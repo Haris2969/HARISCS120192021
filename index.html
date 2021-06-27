@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Covid</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Covid</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/extensions/webproject/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Login To Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Login</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  Sign Up Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpModalLabel"> Create Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputname1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="exampleInputname1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Create Account</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="carouselSignUpCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselSignUpCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselSignUpCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselSignUpCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/1400x300/?covid,19" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Corona Virus</h5>
+          <p>Coronaviruses can cause a variety of illnesses in animals, but in people coronaviruses cause one-third of
+            common colds and sometimes respiratory infections in premature infants..</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x300/?covid,mask" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Wear Mask</h5>
+          <p>Wear Mask and Maintain Distance</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x300/?covid,vaccine" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Vaccination</h5>
+          <p>Get Your Vaccination Done As Soon As Possible.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSignUpCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSignUpCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container my-5">
+    <div class="row mb-9">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">World</strong>
+            <h3 class="mb-0">Qatar Gives Pakistan Covid Vaccine</h3>
+            <div class="mb-1 text-muted">jun 24</div>
+            <p class="card-text mb-auto">Qatar's ambassador to Pakistan, Sheikh Saoud bin Abdulrahman bin Faisel Al
+              Thani, has said that his country will provide one million Covid-19 vaccine doses to Pakistan.</p>
+            <a href="https://www.dawn.com/news/1631062/qatar-pledges-one-million-covid-19-vaccine-doses-to-pakistan"
+              class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger">Covid Vaccination</strong>
+            <h3 class="mb-0">Vaccinated or Not?</h3>
+            <div class="mb-1 text-muted">jun 24</div>
+            <p class="mb-auto">The answer is yes. If you have symptoms of COVID-19, you should get tested for COVID-19
+              even if you are fully vaccinated. You won't be at high risk for hospitalization or severe disease, but...
+            </p>
+            <a href="https://theconversation.com/im-fully-vaccinated-but-feel-sick-should-i-get-tested-for-covid-19-162062"
+              class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row mb-9">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">World</strong>
+            <h3 class="mb-0">Newzealand Corona free</h3>
+            <div class="mb-1 text-muted">jun 24</div>
+            <p class="card-text mb-auto">Newzealand is the one of the first countries to beat covid 19.</p>
+            <a href="https://www.bbc.com/news/world-asia-53274085"
+              class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://source.unsplash.com/500x100/?corona,free
+              alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger">corona 4th layer</strong>
+            <h3 class="mb-0">more dangerous</h3>
+            <div class="mb-1 text-muted">jun 24</div>
+            <p class="mb-auto">Stay Safe,wear Mask</p>
+            <a href="https://www.aarp.org/health/conditions-treatments/info-2021/covid-4th-wave.html"
+              class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://cdn.aarp.net/content/dam/aarp/health/conditions_treatments/2021/04/1140-people-in-park.imgcache.rev.web.900.513.jpg"
+              alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container">
+    <p class="float-end"><a href="index.html">Back to top</a></p>
+    <p>© 2020–2021 Covid, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
